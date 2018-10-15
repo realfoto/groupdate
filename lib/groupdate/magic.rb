@@ -64,10 +64,10 @@ module Groupdate
       end
 
       def perform(relation, result, default_value:)
-        multiple_groups = relation.group_values.size > 1
-
-        check_time_zone_support(result, multiple_groups)
-        result = cast_result(result, multiple_groups)
+        #multiple_groups = relation.group_values.size > 1
+        multiple_groups = true
+        #check_time_zone_support(result, multiple_groups)
+        #result = cast_result(result, multiple_groups)
 
         series_builder.generate(
           result,
