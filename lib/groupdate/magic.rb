@@ -65,7 +65,7 @@ module Groupdate
 
       def perform(relation, result, default_value:)
         #multiple_groups = relation.group_values.size > 1
-        multiple_groups = true
+        multiple_groups = false
         #check_time_zone_support(result, multiple_groups)
         #result = cast_result(result, multiple_groups)
 
